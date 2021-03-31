@@ -20,10 +20,11 @@
  * E_NOTICE safe way to bump/bump_create an array key
  */
 
-function smart_bump(&$aray, $indx, $bump=1) {
-	if(empty($aray[$indx])) {
-		$aray[$indx] = $bump;
-	} else {
-		$aray[$indx] += $bump;
-	}
+function smart_bump(&$aray, $indx, $bump = 1)
+{
+    if (empty($aray[$indx])) {
+        $aray[$indx] = $bump;
+    } else {
+        $aray[$indx] += $bump;
+    }
 }
